@@ -1,0 +1,162 @@
+/*If you don't already have this, adds mobile and desktop only css classes*/
+.mobile-only {
+  display: block;
+}
+
+.menu.mobile-only {
+  display: inline-block;
+}
+
+.desktop-only, .menu.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .mobile-only, .menu.mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .menu.desktop-only {
+    display: inline-block;
+  }
+}
+
+/*logo*/
+.nav-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1rem;
+}
+
+/* Resetting menu bullet list styles */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* For the desktop menu, making all the links sit next to eachother instead of stacking them */
+.desktop-menu ul {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.desktop-menu ul li {
+  display: inline-block;
+  /* The "1rem" below you can change based on how much space you'd like between your links on desktop*/
+  margin: 0 1rem;
+}
+
+/* Hamburger button lines */
+.hamburger-open div {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  /*Change the hamburger icon colour here*/
+  background-color: black;
+}
+
+.hamburger-open {
+  display: inline-block;
+  margin: 0;
+  font-size: 4rem;
+  vertical-align: middle;
+  color: red;
+}
+
+/* The mobile menu overlay (background) */
+.mobile-menu-overlay {
+  /*Initially hidden until open button is clicked*/
+  display: none;
+  /* Height & width fill the page/screen */
+  height: 100%;
+  width: 100%;
+  /* Stay in place */
+  position: fixed;
+  /* z-index places this overlay on the top of other elements */
+  z-index: 999;
+  left: 100%;
+  top: 0;
+  /* Black fallback color */
+  background-color: red;
+  /* Black w/opacity */
+  background-color: red;
+  /* Disable scroll */
+  overflow: hidden;
+  /* 0.5 second transition effect */
+  transition: left 0.5s;
+}
+
+/* Position the content inside the mobile menu */
+.mobile-menu-content {
+  position: relative;
+  /* 25% from the top */
+  top: 10%;
+  margin-top: 32px;
+  /* 100% width */
+  width: 100%;
+  /* Centered text/links */
+  text-align: center;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* Position the close button (top right corner) */
+.mobile-menu-overlay .hamburger-close {
+  position: absolute;
+  top: -8px;
+  right: 6px;
+  font-size: 5rem;
+  transform: rotate(45deg);
+  color: white;
+  font-weight: 300;
+}
+
+/* The navigation links inside the mobile menu */
+.mobile-menu-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4rem;
+  /* Adjust link font here */
+font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  /*Adjust link colour here */
+  color: white;
+  /* Display block instead of inline */
+  display: block;
+  /* Transition effect on hover */
+  transition: 0.3s;
+  margin-bottom: 35px;
+}
+
+a.is-active-mobile {
+  font-style: italic;
+  color: black;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-menu-overlay .hamburger-close {
+    font-size: 5rem;
+    width: 14%;
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    color: white;
+  }
+
+  .mobile-menu-overlay a {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+  }
+}
+
+/* When you mouse over the navigation links, change their color */
+.mobile-menu-overlay a:hover,
+.mobile-menu-overlay a:focus {
+  /* Adjust link hover effect here */
+  color: #f1f1f1;
+}

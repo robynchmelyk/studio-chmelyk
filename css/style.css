@@ -1,0 +1,1498 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 0;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  font-size: 1.75rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid red;
+  margin-bottom: .5rem;
+}
+
+li {
+  text-align: center;
+  display: inline;
+  text-decoration: none;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+    color: red;
+      letter-spacing: 0.01rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: .25rem;
+  margin-top: .75rem;
+  padding-top: .25rem;
+  line-height: 2rem;
+  color: red;
+}
+
+h3 {
+  Font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.55rem;
+  line-height: 1.5rem;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+
+.site-logo-image {
+  padding-left: .5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.pagenav--items {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  color: red;
+  font-size: 120%;
+  text-align: left;
+}
+
+a.navigation-button {
+  margin-bottom: .5rem;
+}
+
+.desktop-pagenav-button:hover {
+  transform: scale(1.2);
+  border-bottom: 3px solid red;
+}
+
+h2.masthead-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  padding: 1%;
+  margin: 0;
+  margin-bottom: .25rem;
+  position: relative;
+  font-weight: 300;
+  color: red;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.25;
+    letter-spacing: 0.01rem;
+}
+
+.masthead-text-box {
+  background-color: black;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background-color: #A5FB4A;
+  }
+
+  10% {
+    background-color: #8e44ad;
+  }
+
+  20% {
+    background-color: #1abc9c;
+  }
+
+  30% {
+    background-color: red;
+  }
+
+  40% {
+    background-color: #A5FB4A;
+  }
+
+  50% {
+    background-color: #8AFAFF;
+  }
+
+  60% {
+    background-color: red;
+  }
+
+  70% {
+    background-color: #6A76B8;
+  }
+
+  80% {
+    background-color: #f1c40f;
+  }
+
+  90% {
+    background-color: #8AFAFF;
+  }
+
+  100% {
+    background-color: pink;
+  }
+}
+
+@-webkit-keyframes masthead-text {
+  0% {
+    -moz-transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.artist-footer-details {
+  font-weight: 500;
+  color: red;
+  font-size: 2.5rem;
+  margin-top: .75rem;
+  padding-top: 1.75rem;
+  margin-bottom: .5rem;
+  border-top: solid 1px red;
+}
+
+h3.artist-footer-detail {
+  font-weight: 700;
+  color: red;
+  line-height: 1;
+  font-size: 2.5rem;
+}
+
+h4.artist-footer-detailing {
+font-weight: 500;
+font-size: 1.5rem;
+padding-top: .75rem;
+}
+
+.project-box {
+  border-bottom: 1px solid red;
+  padding-top: .25rem;
+}
+
+.project-box-final {
+  padding-top: .25rem;
+}
+
+.buy-shape {
+  background-color: red;
+  padding: .5rem;
+  margin-top: .75rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.project-img {
+  margin-top: .75rem;
+}
+
+.project-img-small {
+  padding-right: .5rem;
+  margin-top: 1rem;
+}
+
+.top-section {
+  margin-top: 4%;
+  border-top: 1px solid red;
+}
+
+p.project-description-text {
+  text-align: left;
+  line-height: 1.5rem;
+  margin-bottom: 2.5%;
+}
+
+h3.buy-shape-text {
+  font-weight: 700;
+}
+
+a.more-info-button:hover {
+  background-color: black;
+}
+
+h2.section-titles {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
+  line-height: 1.5rem;
+  color: red;
+}
+
+h2.section-titles:after {
+  background-color: red;
+}
+
+span.highlight {
+  background-color: yellow;
+}
+
+.scroll-transition-fade {
+transition: transform 1s ease-in-out,opacity .8s ease-in-out;
+}
+
+.copyright-information {
+  color: red;
+  text-align: left;
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
+.project-box-text {
+  padding-right: .75rem;
+}
+
+h4.more-info-text {
+  font-weight: 500;
+  color: white;
+  background-color: red;
+  text-align: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 5px;
+  padding-right: 10px;
+  bottom: 65px;
+  right: 10%;
+  font-size: 1rem;
+  margin-top: .25rem;
+  border: solid 1px white;
+  box-shadow: 2px 2px 12px grey;
+  margin-bottom: -35px;
+}
+
+p.project-item-rationale {
+  padding-bottom: .75rem;
+  padding-top: .25rem;
+}
+
+.business-objectives {
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  margin-bottom: .75rem;
+}
+
+.red {
+  color: red;
+}
+
+h4.business-objective-title {
+  font-size: 1.55rem;
+  line-height: 1.5rem;
+}
+
+h4.rationale-title {
+  padding: .25rem 0;
+  font-size: 1.55rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  padding-top: .75rem;
+}
+
+h3.project-description-subtitle {
+  font-size: 115%;
+  line-height: 125%;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 115%;
+  line-height: 125%;
+}
+
+h2.page-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.95rem;
+}
+
+.top-spacing {
+  padding-top: 1rem;
+}
+
+.border-bottom {
+  border-bottom: solid 1px red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of self-made Website Specific Code */
+
+
+.date-box {
+  padding-right: 1rem;
+}
+
+.details-box {
+  padding-left: 1rem;
+  margin-top: -.25rem;
+}
+
+.schedule-buy-button {
+  font-weight: 700;
+  font-style: italic;
+  margin-right: 0;
+  position: relative;
+  right: 39px;
+  top: 1px;
+  overflow: hidden;
+  width: 99px;
+  height: 57px;
+  z-index: -4;
+  background-color: red;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.triangle-box {
+  max-height: 93px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 120px solid transparent;
+  border-right: 27px solid red;
+  position: relative;
+  right: 13px;
+  bottom: 8px;
+  z-index: -1;
+}
+
+.arrow-left-outline {
+  width: 0;
+  height: 0;
+  border-top: 120px solid transparent;
+  border-right: 27px solid black;
+  position: relative;
+  right: 15px;
+  bottom: 130px;
+  z-index: -2;
+}
+
+.individual-item-box {
+  border: 1px solid black;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+.merchandise-img {
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+.merchandise-triangle-box {
+  max-height: 60px;
+  position: relative;
+  left: 40.74px;
+  bottom: 15px;
+}
+
+.merchandise-text-box {
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.buy-shape:hover {
+  color: black;
+}
+
+h2.item-name {
+  font-size: 1.5rem;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+}
+
+h2.item-price {
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding-right: .25rem;
+  position: relative;
+  bottom: 6px;
+}
+
+h3.buy-button-text {
+  font-size: 2rem;
+  position: relative;
+  top: 10px;
+}
+
+.item-img-box {
+  max-height: 300px;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.item-buy-button-shape {
+  font-weight: 700;
+  font-style: italic;
+  margin-right: 0;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  z-index: -1;
+  background-color: red;
+  border-top: 1px solid black;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  margin-left: 1.5rem;
+}
+
+.navigation-button-tablet {
+  height: auto;
+  width: 75%;
+}
+
+.navigation-button-tablet-inner {
+  position: relative;
+  right: 1rem;
+  bottom: 5px;
+  height: auto;
+  width: 75%;
+}
+
+.tablet-navigation-button {
+  align-items: center;
+}
+
+.navigation-desktop {
+  display: none;
+}
+
+.media-image-box {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  max-height: 304px;
+  outline: 3px solid black;
+  outline-offset: -2.5px;
+  overflow: hidden;
+}
+
+h2.event-details {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.media-image-text {
+  background: white;
+  color: red;
+  position: relative;
+  bottom: 66.5px;
+  width: 210px;
+  height: 65px;
+  border: 1px solid red;
+  padding: .35rem;
+  opacity: 0.95;
+}
+
+.download-arrow {
+  position: relative;
+  bottom: 370.5px;
+  left: 258.5px;
+  width: 90%;
+  height: auto;
+}
+
+img.download-arrow-img {
+  background-color: white;
+  padding: .25rem;
+  border-left: 2px solid red;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  width: 90%;
+  height: auto;
+}
+
+img.download-arrow-img:hover {
+  background-color: black;
+}
+
+.is-active {
+  transform: scale(1.2);
+  border-bottom: 9px solid red;
+  font-style: italic;
+}
+
+h3.contact-details {
+  font-size: 1rem;
+}
+
+.contact-page-form {
+  padding-left: 1.6rem;
+}
+
+.contact-page-details {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+label.contact-form {
+  margin-top: .5rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: red;
+}
+
+.contact-form-fieldset {
+  padding-right: 1.1rem;
+}
+
+.container-masthead {
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: .5rem;
+}
+
+input {
+  border: 1px solid red;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  padding: .25rem;
+  width: 75%;
+}
+
+textarea {
+  border: 1px solid red;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  padding: .25rem;
+  width: 100%;
+  height: 150px;
+}
+
+button.submit-button {
+  font-weight: 500;
+  font-style: italic;
+  margin-right: 0;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  height: 60px;
+  width: 110px;
+  background-color: red;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+button.submit-button:hover {
+  border: solid 1px red;
+  color: red;
+  background-color: white;
+}
+
+.submit-button {
+  position: relative;
+  top: 1.5px;
+  font-size: 1.75rem;
+}
+
+.mainpg-landing-img {
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  height: 75vh;
+}
+
+.mainpg-secondary-image {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 218px;
+  left: -15px;
+  width: 355px;
+}
+
+.schedule-box {
+  border: 1px solid black;
+  padding-left: 1%;
+  margin-bottom: -2px;
+  height: 93px;
+  overflow: hidden;
+}
+
+a.photographer-link {
+  font-weight: 500;
+  font-size: 110%;
+}
+
+a.photographer-link:hover {
+  color: red;
+}
+
+.socialmedia-item {
+  margin-bottom: .25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.social-media-icons {
+  width: 55%;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  h5 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header {
+    border-bottom: 1px solid red;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .project-box {
+    border-bottom: 1px solid red;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-right: .75rem;
+  }
+
+  .project-item-rationale {
+    padding-right: 3rem;
+  }
+
+  h4.business-objective-title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h4.rationale-title {
+    padding: .5rem 0;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .site-logo-image {
+    padding-left: 1rem;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  h1.masthead-text {
+    font-size: 9.5rem;
+    position: absolute;
+    line-height: inherit;
+    top: 17rem;
+    left: 0px;
+    right: 0px;
+  }
+
+  h1.schedule-date-number {
+    font-size: 5.5rem;
+  }
+
+  h2.schedule-city-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 2.75rem;
+  }
+
+  h3.beside-schedule-date-month {
+    position: relative;
+    font-size: 2.4rem;
+    transform: rotate(90deg);
+    letter-spacing: -2px;
+    justify-content: center;
+    text-align: center;
+    left: -10px;
+  }
+
+  .beside-schedule-date-month {
+    display: flex;
+    right: 100px;
+  }
+
+  .schedule-date-month {
+    display: none;
+  }
+
+  h3.schedule-time-large {
+    position: relative;
+    right: 75px;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .schedule-time-large {
+    display: flex;
+  }
+
+  .schedule-time {
+    display: none;
+  }
+
+  h3.schedule-artist-names {
+    font-size: 1.5rem;
+  }
+
+  .details-box {
+    margin-left: -1.5rem;
+  }
+
+  h2.schedule-buy-button {
+    position: relative;
+    padding-top: 1.5rem;
+    transform: none;
+  }
+
+  .individual-item-box {
+    margin-bottom: .75rem;
+  }
+
+  .artist-bio-content-box {
+    height: 32px;
+  }
+
+  p.bio-text {
+    margin-bottom: .75rem;
+  }
+
+  .artist-bio-image {
+    position: relative;
+    top: -188px;
+    right: 105px;
+    height: auto;
+    width: 215px;
+    z-index: -1;
+  }
+
+  .snotty-nose-rez-kids-img {
+    position: relative;
+    top: -159px;
+    right: 155px;
+    width: 205px;
+  }
+
+  .jae-sterling-img {
+    position: relative;
+    top: -174px;
+    left: -136px;
+  }
+
+  .artist-bio-details-box {
+    margin-left: -1.5rem;
+  }
+
+  h2.artist-bio-schedule-city-name {
+    position: relative;
+    font-size: 1.8rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: .25rem;
+  }
+
+  .artist-bio-schedule-text {
+    margin-top: 1.25rem;
+    padding-top: 0.75rem;
+  }
+
+  h1.artist-bio-schedule-date-number {
+    font-size: 4.55rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: .25rem;
+    line-height: 1;
+    margin-top: -.5rem;
+  }
+
+  .artist-bio-schedule-time-large {
+    display: flex;
+  }
+
+  .artist-bio-schedule-time-large {
+    position: relative;
+    right: 45px;
+    font-size: 2.25rem;
+    font-weight: 200;
+  }
+
+  .artist-bio-schedule-artist-names {
+    font-size: 1.2rem;
+    margin-top: .25rem;
+    padding-left: .1rem;
+  }
+
+  .triangle-box {
+    max-height: 93px;
+  }
+
+  .arrow-left {
+    position: relative;
+    left: 16px;
+    bottom: 15px;
+  }
+
+  .arrow-left-outline {
+    position: relative;
+    left: 14px;
+    bottom: 138px;
+  }
+
+  .merchandise-triangle-box {
+    max-height: 50px;
+    position: relative;
+    left: 19px;
+    bottom: 15px;
+  }
+
+  .merchandise-text-box {
+    max-height: 60px;
+    overflow: hidden;
+    margin-top: -2px;
+  }
+
+  h2.item-price {
+    font-size: 2.5rem;
+  }
+
+  h3.buy-button-text {
+    font-size: 2.25rem;
+  }
+
+  .item-img-box {
+    max-height: 368px;
+  }
+
+  .buy-shape {
+    background-color: pink;
+  }
+
+
+
+  .artist-bio-box-text {
+    border: 1px solid black;
+    padding-left: 1.25rem;
+    padding-right: .75rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+
+  .schedule-buy-button {
+    height: 100px;
+    margin-right: 0;
+    position: relative;
+    right: 45px;
+    bottom: 5px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .tablet-navigation-button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navigation-button-tablet {
+    width: 100%;
+    height: auto;
+  }
+
+  .mobile-navigation-button {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: none;
+  }
+
+  .media-image-box {
+    max-height: 368px;
+    margin-bottom: 1rem;
+  }
+
+  h2.event-details {
+    position: relative;
+    font-size: 1.35rem;
+  }
+
+  .media-image-text {
+    position: relative;
+    bottom: 86.5px;
+    width: 260px;
+    height: 85px;
+  }
+
+  .download-arrow {
+    position: relative;
+    bottom: 454.5px;
+    left: 313px;
+  }
+
+  .container-masthead {}
+
+  h3.contact-details {
+    font-size: 1.4rem;
+  }
+
+  .contact-page-form {
+    padding-left: 2.8rem;
+  }
+
+  .contact-page-details {
+    margin-top: 2rem;
+    padding-left: 2.8rem;
+  }
+
+  label.contact-form {
+    font-size: 1.4rem;
+  }
+
+  .contact-form-fieldset {
+    padding-right: 1.1rem;
+  }
+
+  input {
+    margin-bottom: .75rem;
+  }
+
+  textarea {
+    margin-bottom: .75rem;
+  }
+
+  button.submit-button {
+    font-size: 170%;
+    height: 70px;
+    width: 100px;
+  }
+
+  .mainpg-secondary-image {
+    position: absolute;
+    top: 352px;
+    left: 97px;
+    width: 600px;
+  }
+
+  .schedule-box {
+    margin-left: .5rem;
+    height: 100px;
+  }
+
+  .socialmedia-item {
+    margin: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-media-icons {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h5 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .site-logo-image {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .pagenav-item {
+    margin-left: 32px;
+  }
+
+  .desktop-pagenav-button {
+    font-size: 1.8rem;
+    display: inline;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 0px;
+    padding-bottom: 2.5px;
+  }
+
+  .pagenav-button:hover {
+    transform: scale(1.2);
+    border-bottom: 9px solid black;
+  }
+
+  h1.masthead-text {
+    font-size: 5rem;
+    position: relative;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+    color: #A5FB4A;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1.schedule-date-number {
+    font-size: 6.5rem;
+    padding-left: 1rem;
+  }
+
+  h2.schedule-city-name {
+    font-size: 3.15rem;
+  }
+
+  h3.schedule-date-month {
+    position: relative;
+    right: 60px;
+    font-size: 2.5rem;
+  }
+
+  h3.schedule-time-large {
+    position: relative;
+    right: 130px;
+    font-size: 4rem;
+  }
+
+  h3.schedule-time {
+    position: relative;
+    right: 100px;
+    font-size: 4rem;
+  }
+
+  h3.schedule-artist-names {
+    font-size: 1.5rem;
+  }
+
+  h3.beside-schedule-date-month {
+    position: relative;
+    font-size: 2.4rem;
+    transform: rotate(90deg);
+    letter-spacing: -2px;
+    justify-content: center;
+    text-align: center;
+    left: -45px;
+  }
+
+
+
+  h2.artist-bio-title {
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .artist-bio-box-text {
+    padding-left: 2.5rem;
+    padding-right: 3.2rem;
+    padding-bottom: 2rem;
+    padding-top: 1.35rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .artist-bio-image {
+    position: relative;
+    top: -237px;
+    right: 195px;
+    height: auto;
+    width: 255px;
+    z-index: -1;
+  }
+
+  .snotty-nose-rez-kids-img {
+    position: relative;
+    top: -251px;
+    right: 75px;
+    width: 295px;
+  }
+
+  .jae-sterling-img {
+    position: relative;
+    top: -222px;
+    left: -186px;
+  }
+
+  h2.artist-bio-schedule-city-name {
+    position: relative;
+    font-size: 2.25rem;
+  }
+
+  h1.artist-bio-schedule-date-number {
+    font-size: 5.9rem;
+    padding-left: .25rem;
+  }
+
+  .artist-bio-schedule-time-large {
+    position: relative;
+    right: 105px;
+    font-size: 3rem;
+  }
+
+  .artist-bio-schedule-artist-names {
+    font-size: 1.3rem;
+    margin-top: .4rem;
+    padding-left: .1rem;
+  }
+
+  .tablet-navigation-button {
+    display: none;
+  }
+
+  .mobile-navigation-button {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .schedule-buy-button {
+    background-color: red;
+    font-weight: 700;
+    font-style: italic;
+    height: 110px;
+    margin-right: 0;
+    right: 23px;
+    width: 120px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .individual-item-box {
+    border: 1px solid black;
+    margin-bottom: .75rem;
+  }
+
+  button.submit-button {
+    font-size: 190%;
+    height: 60px;
+    width: 180px;
+    padding-top: .75rem;
+  }
+
+
+
+  .triangle-box {
+    max-height: 93px;
+  }
+
+  .arrow-left {
+    position: relative;
+    left: 89px;
+    bottom: 15px;
+  }
+
+  .arrow-left-outline {
+    position: relative;
+    left: 87px;
+    bottom: 138px;
+  }
+
+  h2.item-price {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  h3.buy-button-text {
+    font-size: 2.5rem;
+    margin-top: -0.2rem;
+  }
+
+  .item-img-box {
+    max-height: 406px;
+    z-index: -15;
+  }
+
+  .media-image-box {
+    max-height: 418.65px;
+    max-width: 418.65px;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    outline-offset: -3px;
+  }
+
+  h2.event-details {
+    position: relative;
+    font-size: 1.47rem;
+  }
+
+  .merchandise-triangle-box {
+    max-height: 50px;
+    position: relative;
+    left: -49.5px;
+    bottom: 15px;
+  }
+
+  .merchandise-text-box {
+    max-height: 60px;
+    overflow: hidden;
+    margin-top: 0px;
+  }
+
+  .media-image-text {
+    position: relative;
+    bottom: 87.5px;
+    width: 260px;
+    height: 85px;
+    border: 1px solid red;
+  }
+
+  .download-arrow {
+    position: relative;
+    bottom: 505.5px;
+    left: 352px;
+  }
+
+  img.download-arrow-img {
+    padding: .5rem;
+    border: 3px solid red;
+    width: 95%;
+    height: auto;
+  }
+
+  .container-masthead {}
+
+  h3.contact-details {
+    font-size: 1.6rem;
+  }
+
+  .contact-page-form {
+    padding-left: 2.6rem;
+  }
+
+  .contact-page-details {
+    padding-left: 2rem;
+  }
+
+  .mainpg-secondary-image {
+    position: absolute;
+    top: 365px;
+    left: 390px;
+    width: 660px;
+  }
+
+  .schedule-box {
+    padding-left: 1%;
+    height: 110px;
+  }
+
+  .artist-city-box-spacing {
+    padding-left: 3rem;
+  }
+
+  .socialmedia-item {
+    margin: .5rem;
+  }
+
+  .social-media-icons {
+    width: 70%;
+  }
+}
+
+.img--landscape {
+  width: 100%;
+}
+
+.img--portrait {
+  height: 100%;
+}
+
+/* container elements */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
